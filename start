@@ -1,5 +1,32 @@
+";"필수는 아니나 사용하는게 좋을듯 함
+
 alert(); // 메세지 박스를 띄움 확인 버튼 누르기 전까지 없어지지 않음 
-prompt(); // 값을 입력 받을 박스를 띄울때 사용
+//단점 스크립트 일시 정지
+//스타일링 불가 
+
+prompt(); // 값을 입력 받을 박스를 띄울때 사용 -> 취소 = null; 두번째 인수는 default값
 
 const name = prompt("이름을 입력하세요.");
 alert("환영합니다," +name + "님");
+
+const name = prompt("예약일을 입력하세요.","2020-10-");//default값을 줄 수 있음
+
+const isAdult = confirm("당신은 성인 입니까?");
+console.log(isAdult);
+
+//형변환
+const mathScore = prompt("수학 몇점?");
+const engScore = prompt("영어 몇점?");
+const result = (mathScore + engScore) /2;
+
+console.log(result);
+//console.log()는 JavaScript에서 가장 많이 사용되는 메서드 중 하나로, 디버깅이나 정보 출력을 위해 콘솔에 메시지를 출력하는 데 사용됨
+// ","를 이용하여 여러가지 값을 한번에 나타낼수도 있음
+
+//"90"+"80"="9080"
+//"9080"/2=4540
+"6"/"2"=3 나누기-> 자동 형변환 보다는 명시적 형변환
+
+//명시적 형변환
+String()//문자열로 형변환
+Number()//숫자로 형변환
