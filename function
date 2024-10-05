@@ -1,0 +1,37 @@
+//함수 목적은 중복을 줄이기 위함
+function sayHello(name){//매개변수 o
+  console.log('Hello ${name}');
+}
+
+sayHello('Mike'); //함수 호출
+
+function showError(){//매개변수 x
+  alert('에러가 발생했습니다. 다시 시도해주세요.');
+}
+
+showError(); //함수 호출
+
+function sayHello(name){
+
+  let msg ='Hello';
+  if(name){
+    msg = 'Hello, ${name}';
+  }
+  console.log(msg);
+}
+
+sayHello(); // -> 'Hello'
+
+function sayHello(name){
+
+  let msg ='Hello';
+  if(name){
+    msg +=name;
+    msg += '${name}';//문자열에 변수 넣을때는 꼭 백틱 사용!
+  }
+  console.log(msg);
+}
+
+sayHello(); // -> 'Hello'
+sayHello('Mike');
+
