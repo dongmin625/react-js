@@ -1,0 +1,33 @@
+//비교연산자 -> 항상 true 나 false 만 반환
+// < > >= <= == !=
+
+const a = 1;
+const b = "1";
+
+console.log(a==b); -> true //동등연산자
+console.log(a===b); -> false //일치 연산자 
+
+//조건문
+if(age> 19){//if
+  console.log('환영 합니다');
+}
+if(age<=19){
+  console.log('안녕히 가세요');
+}
+
+if(age> 19){//if
+  console.log('환영 합니다');
+}else if(age==19){//else if
+  console.log('수능 잘치세요');
+}
+else{//else
+  console.log('안녕히 가세요')
+}  
+
+//논리 연산자
+//or(||)  and(&&) not(!)
+
+//운전면허(전체군인의 80%)가 있고 시력이(전체 군인의 60%) 좋은 여군(전체 군인의 7%)
+//-> 여군인데 시력이 좋고 운전면허가 있는 사람 성능최적화
+
+
