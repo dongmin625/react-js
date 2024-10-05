@@ -30,4 +30,29 @@ else{//else
 //운전면허(전체군인의 80%)가 있고 시력이(전체 군인의 60%) 좋은 여군(전체 군인의 7%)
 //-> 여군인데 시력이 좋고 운전면허가 있는 사람 성능최적화
 
+const age = prompt('나이가..?');
+const isAge = age>19;
+
+if(!isAge){
+  console.log('돌아가..');
+}
+
+//우선순위 
+const gender ='F';
+const name = 'Jane';
+const isAdult = true;
+
+if(gender === 'M' && name === 'Mike' || isAdult){//and가 우선순위가 or 보다 높음
+  console.log('통과')
+}else{
+  console.log('돌아가.')
+}
+
+if(gender === 'M' && (name === 'Mike' || isAdult)){//이렇게 묶어야 의도한바 대로 작동
+  console.log('통과')
+}else{
+  console.log('돌아가.')
+}
+
+
 
