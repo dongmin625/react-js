@@ -1,0 +1,29 @@
+//함수 선언문 : 어디서든 호출가능(호이스팅)
+
+//호이스팅 :  변수는 선언만 위로 끌어올림 함수는 전체를 위로 끌어올림 
+function sayHello(){
+  console.log('Hello');
+}
+sayHello();
+
+
+//함수 표현식 : 호출문 위치 중요  
+
+let sayHello = function(){
+  console.log('Hello');
+}
+sayHello();
+
+//함수 표현식
+let add = function(num1,num2){
+  return num1+num2;
+}
+//화살표 함수
+let add = (num1,num2) => { //function 대신 화살표
+  return num1+num2;
+}
+let add = (num1,num2) => (//return 문 대신 ()
+  num1+num2;
+)
+
+let add = (num1,num2) => num1+num2;//return 문이 한줄이라면 () 도 생략가능
