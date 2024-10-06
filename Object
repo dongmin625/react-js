@@ -1,0 +1,95 @@
+// Object
+
+const superman{
+  name:'clark', //key:value
+  age:33,//마지막 쉼표는 생략가능
+}
+
+//접근
+superman.name
+superman['age']
+
+//추가
+superman.gender = 'male';
+superman.['hairColor'] = 'black';
+
+//삭제
+delete superman.hairColor;
+
+//in을 통해 프로퍼티 존재 여부 확인
+
+function makeObject(name,age){
+return{
+  name : name,
+  age : age,
+  hobby : 'football'
+  }
+}
+
+const Mike = makeObject('Mike',30);
+console.log(Mike);
+
+console.log("age" in Mike);
+console.log("birthday" in Mike);
+
+//객체 for..in
+
+const Mike ={
+  name: "Mike",
+  age : 30
+};
+
+for(x in Mike){ //x 자리에는 어떤것이 오든 상관없음
+  console.log(Mike[x]) // -> "Mike" 30
+}
+
+//메소드
+
+//화살표 함수는 읿잔 함수와는 달리 자신만의 this 를 가지지 않음
+//화살표 함수 내부에서 this를 사용하면, 그 this는 외부에서 값을 가져 옴
+
+let boy ={
+  name : "Mike",
+  showName : function(){ // == showName(){}
+    //console.log(boy.name)
+    console.log(this.name)//해당 객체를 가리킴
+  }  
+};
+
+boy.showName();
+
+let man = boy;
+man.name ="Tom'
+
+//객체의 메서드를 작성할때는 화살표함수를 사용하지 않는게 좋다
+
+//배열
+
+//자바스크립트 배열은 다양한 타입을 한번에 넣어도됨
+
+let days = ['mon', 'tue', 'wed'];
+days[1] = "화요일"
+console.log(days.length) //배열의 길이
+days.push('thu') //배열의 맨뒤에 추가
+days.pup() //배열의 맨뒤요소 삭제
+days.unshift('sun') //배열의 맨앞에 추가
+days.shift()//배열의 맨앞요소 삭제
+
+for(let index =0; index<days.length; index++){
+  console.log(days[index]);
+}
+
+for(let x of days){//x의 위치에는 아무거나 써도됨
+  console.log(day);
+}
+
+
+
+
+
+
+
+
+
+
+
