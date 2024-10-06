@@ -27,3 +27,7 @@ let add = (num1,num2) => (//return 문 대신 ()
 )
 
 let add = (num1,num2) => num1+num2;//return 문이 한줄이라면 () 도 생략가능
+
+let showError =() => {
+  alert('error'); //인수가 없는 함수는 괄호생략 불가
+}
