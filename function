@@ -48,7 +48,7 @@ sayHello('Mike');
 
 function sayHello(name){
   let newName = name || 'friend';//입력 x or은 마지막 true를 반환 -> friend 를 반환
-  let msg = `Hello, ${newName}`
+  let msg = `Hello, ${name}`
   console.log(msg)
 }
 
@@ -56,7 +56,7 @@ sayHello();  //"Hellow friend"
 sayHello('Jane') //"Hellow, Jane"
 
 function sayHello(name = 'friend'){//default 값 주는 방법 name에 값이 입력되지 않았을때만 friend 가 들어감
-  let msg = `Hello, ${newName}`
+  let msg = `Hello, ${name}`
   console.log(msg)
 }
 
