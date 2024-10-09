@@ -14,7 +14,8 @@ let sayHello = function(){
 }
 sayHello();
 
-//함수 표현식
+//함수 표현식(변수에 함수를 할당)
+//이경우 함수는 할당 이후(즉 표현식 아래쪽에서만 사용가능)
 let add = function(num1,num2){
   return num1+num2;
 }
