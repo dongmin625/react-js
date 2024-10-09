@@ -79,7 +79,7 @@ for(let index =0; index<days.length; index++){
   console.log(days[index]);
 }
 
-for(let x of days){//x의 위치에는 아무거나 써도됨
+for(let day of days){//x의 위치에는 아무거나 써도됨
   console.log(day);
 }
 
