@@ -14,6 +14,7 @@ alert("환영합니다," +name + "님");
 const name = prompt("예약일을 입력하세요.","2020-10-");//default값을 줄 수 있음
 
 const isAdult = confirm("당신은 성인 입니까?");
+//confirm() : 확인창을 띄움
 console.log(isAdult);
 
 //형변환
